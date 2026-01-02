@@ -22,10 +22,8 @@ jobs:
           go-version: '1.21'
           
       - name: COMPILAR
-        working-directory: app
-        run: go build 
+        run: go build .
         
       - name: EXECUTAR
-        working-directory: app
         run: go test ./...
 
