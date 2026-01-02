@@ -23,6 +23,8 @@ jobs:
           
       - name: COMPILAR
         run: go build ./...
+        working-directory: app
         
       - name: EXECUTAR
         run: go test ./...
+        working-directory: app
